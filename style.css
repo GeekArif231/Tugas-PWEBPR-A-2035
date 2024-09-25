@@ -1,0 +1,39 @@
+/* Menyembunyikan header di tampilan mobile */
+@media (max-width: 640px) {
+    .card-header {
+      display: none;
+    }
+  
+    /* Agar layout menjadi vertikal pada tampilan mobile */
+    .flex-col {
+      flex-direction: column !important;
+      align-items: center;
+    }
+  
+    /* Menyelaraskan elemen di tengah pada tampilan mobile */
+    .w-24 {
+      margin-bottom: 8px;
+    }
+  
+    /* Button tetap di bawah gambar */
+    button {
+      margin-top: 0 !important;
+    }
+  }
+@media (max-width: 640px) {
+  /* Menghilangkan margin bawah gambar dan menyesuaikan jarak antar elemen */
+  img {
+    margin-bottom: 0 !important;
+  }
+
+  /* Menyusun header, deskripsi, dan tombol agar lebih dekat */
+  .flex-col h4, .flex-col p, .flex-col button {
+    margin-bottom: 4px;
+  }
+
+  /* Mengatur ulang padding agar tidak terlalu banyak pada mobile */
+  .p-4 {
+    padding: 1rem !important;
+  }
+}
+  
